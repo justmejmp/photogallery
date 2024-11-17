@@ -1,0 +1,142 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+    background-color: black;
+}
+
+
+main {
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+    padding-top: 50px; 
+    gap: 20px; 
+}
+
+
+header.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header.menu .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header.menu nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+header.menu nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+header.menu nav ul li a:hover {
+    color: burlywood;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0;
+    flex-wrap: wrap; 
+    overflow-x: hidden; 
+    width: 100%;
+}
+
+
+.box {
+    width: 40px;
+    height: 390px;
+    background-color: burlywood;
+    margin: 12px;
+    cursor: pointer;
+    transition: width 0.3s ease-in, height 0.3s ease-in;
+    border-radius: 17px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.expanded {
+    width: 520px;
+    height: 470px;
+}
+
+
+.image1 {
+    background-image: url('image1.jpeg');
+}
+
+.image2 {
+    background-image: url('image2.jpeg');
+}
+
+.image3 {
+    background-image: url('image3.jpeg');
+}
+
+.image4 {
+    background-image: url('image4.jpeg');
+}
+
+.image5 {
+    background-image: url('image5.JPG');
+}
+
+
+footer {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+footer .social a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: burlywood;
+    transition: color 0.3s ease;
+}
+
+footer .social a:hover {
+    color: #fff;
+}
+
+footer .address {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+* Media Queries for Responsiveness 
+@media (max-width: 768px) {
+    .box {
+        width: 150px; 
+
+     } }
